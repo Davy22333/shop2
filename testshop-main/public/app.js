@@ -79,7 +79,7 @@ async function loadProducts() {
   container.innerHTML = '';
   products.forEach(p => {
     const item = document.createElement('div');
-    item.innerHTML = `${p.name} - $${p.price} <button onclick='addToCart(${JSON.stringify(p)})'>Add</button>`;
+    item.innerHTML = `${p.name} - $${p.price} <button class="btn btn-sm btn-outline-info" onclick='addToCart(${JSON.stringify(p)})'>Add</button>`;
     container.appendChild(item);
   });
 }
